@@ -1,0 +1,26 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using UdemyCarBook.Domain.Entities;
+
+namespace UdemyCarBook.Application.Features.Mediator.Commands.ReservationCommands
+{
+    public class CreateReservationCommand:IRequest
+    {
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public int PickUpLocationID { get; set; }
+        public int DropOffLocationID { get; set; }
+        public int CarID { get; set; }
+        public int Age { get; set; }
+        public string DriverLicenseNumber { get; set; }
+        public int? AppUserId { get; set; }
+        public string Description { get; set; }
+        public DateTime PickUpDate { get; set; }
+        public DateTime DropOffDate { get; set; }
+        public string? Status { get; set; } 
+    }
+}
